@@ -61,6 +61,8 @@ used for reporting or decision support.
 
 ## Benefits of an AI Agent for Data Analysis and Visualization
 
+![AI Data Analysis and Visualization App Front View](AI%20Data%20Analysis%20%26%20Visualization%20App%20Front%20View.png)
+
 - **Faster analysis:** Users can ask questions directly instead of writing code.
 - **Lower technical barrier:** Non-technical users can explore datasets with
   natural language.
@@ -376,7 +378,7 @@ pages/chat_page.py
 | Session memory | `utils/session_state.py`, `agent/memory.py` |
 
 
-## Slide: Technical Design and Responsibility Split
+## Technical Design and Responsibility Split
 
 ```text
 User question
