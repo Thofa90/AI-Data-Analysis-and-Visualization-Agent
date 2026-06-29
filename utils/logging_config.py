@@ -1,0 +1,15 @@
+"""Standard application logging configuration."""
+
+from __future__ import annotations
+
+import logging
+
+
+def configure_logging(level: str = "INFO") -> None:
+    """Initialize concise console logging once."""
+    if logging.getLogger().handlers:
+        return
+    logging.basicConfig(
+        level=getattr(logging, level.upper(), logging.INFO),
+        format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+    )

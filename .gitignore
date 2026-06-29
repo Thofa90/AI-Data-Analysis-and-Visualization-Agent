@@ -1,0 +1,65 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Logs and runtime output
+logs/
+*.log
+*.tmp
+*.temp
+
+# Generated exports and reports
+exports/
+reports/
+output/
+outputs/
+downloads/
+analysis_report.html
+analysis_report.pdf
+cleaned_data.csv
+cleaned_data.xlsx
+analysis_history.json
+cleaning_history.json
+evaluation_report.json
+
+# Local presentation/demo notes
+PRESENTATION_SLIDES.md
+DemoVideo_text.md
+
+# Streamlit local state
+.streamlit/cache/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local Codex/agent workspace metadata
+.codex/
+.agents/

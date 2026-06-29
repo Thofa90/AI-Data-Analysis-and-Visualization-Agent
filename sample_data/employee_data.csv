@@ -1,0 +1,11 @@
+Employee ID,Department,Salary,Tenure,Satisfaction,Attrition
+E001,Engineering,92000,5,4.5,No
+E002,Sales,68000,3,4.0,No
+E003,Finance,76000,7,3.8,No
+E004,Engineering,105000,9,4.7,No
+E005,Human Resources,64000,4,4.2,No
+E006,Sales,71000,2,3.4,Yes
+E007,Finance,82000,8,4.1,No
+E008,Engineering,88000,4,3.9,No
+E009,Human Resources,61000,2,3.6,Yes
+E010,Sales,74000,6,4.3,No
