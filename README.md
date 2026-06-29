@@ -375,12 +375,8 @@ pages/chat_page.py
 | Export/report generation | `services/export_service.py`, `services/report_service.py` |
 | Session memory | `utils/session_state.py`, `agent/memory.py` |
 
-## Presentation Technical Design Slides
 
-Use the following one or two slides in the presentation to explain the system
-clearly without over-claiming what the LLM does.
-
-### Slide: Technical Design and Responsibility Split
+## Slide: Technical Design and Responsibility Split
 
 ```text
 User question
@@ -418,7 +414,7 @@ Important message for the audience:
 > the user request and explain verified outputs. Pandas/SciPy performs the
 > actual calculations.
 
-### Slide: Model, LangChain, Ollama, Cleaning, and Evaluation
+## Model, LangChain, Ollama, Cleaning, and Evaluation
 
 | Component | Role in this project |
 | --- | --- |
@@ -432,20 +428,6 @@ Important message for the audience:
 | Chart insight service | Reads chart evidence and writes key finding, supporting evidence, interpretation, caution, and next step. |
 | Data cleaning service | Previews and applies reversible cleaning actions such as missing-value handling, duplicate removal, type conversion, and column fixes. |
 | Evaluation service | Scores answers for correctness, relevance, faithfulness, completeness, tool accuracy, and chart accuracy using deterministic checks and optional LLM judging. |
-
-Suggested speaking script:
-
-> My architecture separates reasoning from calculation. The LLM is used for
-> language understanding and explanation, but it is not trusted to invent
-> numbers. The agent converts the question into a validated plan, the tool
-> registry checks that the plan is safe, and Pandas/SciPy performs the actual
-> analysis. Plotly generates charts, and the chart insight service explains the
-> visual using evidence from the chart data.
-
-> Ollama lets the app run the LLM locally. LangChain is used as the connector to
-> call the Ollama model. LangGraph is part of the planned/available agent stack,
-> but in this submitted version the main workflow is implemented directly in the
-> app's agent layer for transparency and control.
 
 ## Technology Stack
 
